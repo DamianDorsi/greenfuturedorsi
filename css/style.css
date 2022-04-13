@@ -59,20 +59,6 @@ nav div ul li a {
     height: 200px;
 }
 
-/* ------------------ MINBANNER ------------------*/
-
-.divMinBanner {
-    display: flex;
-    background-color: goldenrod;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.h3min {
-    margin-left: 60px;
-}
-
-
 
 /* -------------- MAIN -----------------*/
 
@@ -355,7 +341,33 @@ footer div p {
 
 
 
+/* --------------------- CONTACTO -----------------*/
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.enviar {
+    outline:none;
+    height: 40px;
+    text-align: center;
+    width: 130px;
+    border-radius:40px;
+    background: #fff;
+    border: 2px solid green;
+    color: green;
+    letter-spacing:1px;
+    text-shadow:0;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.enviar:hover {
+    color:white;
+    background: green;
+}
 
 
 
