@@ -13,50 +13,35 @@ a {
 
 /* -------- HEADER ----------- */
 
-.navMain {
-    background-color: greenyellow;
+
+.bg-dark {
+    background-color: black !important;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 5px;
-}
-
-nav div h1 {
-    padding-top: 10px;
-}
-
-nav div h1 a {
-    color: black;
+header{
+    position: sticky;
+    top: 0;
 }
 
 nav div img {
     width: 2.5rem;
     height: 2.5rem; 
 }
-
-nav div ul {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 5px;
-}
-
-nav div ul li {
-    list-style: none;
-    font-size: 15px;
-    padding-bottom: 5px;
-}
-
-nav div ul li a {
-    color: black;
-}
-
 /* ------------- BANNER ------------------ */
 
 .bannerImg img {
     width: 100%;
     height: 200px;
+}
+
+.neonline {
+    background-color: black;
+}
+
+.neonline img {
+    width: 450px;
+    height: 15px;
+    margin-top: -23px;
 }
 
 
@@ -343,11 +328,21 @@ footer div p {
 
 /* --------------------- CONTACTO -----------------*/
 
+
+
 form {
+    width: 100%;
+    margin-top: 30px;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
+    border: 2px solid green;
+}
+
+.form-group {
+    width: 70%;
 }
 
 .enviar {
@@ -355,10 +350,9 @@ form {
     height: 40px;
     text-align: center;
     width: 130px;
-    border-radius:40px;
-    background: #fff;
+    background: black;
     border: 2px solid green;
-    color: green;
+    color: white;
     letter-spacing:1px;
     text-shadow:0;
     cursor: pointer;
@@ -369,6 +363,22 @@ form {
     background: green;
 }
 
+form h2 {
+    color: white;
+}
+
+form label {
+    color: white;
+}
+
+form div {
+    padding-top: 15px;
+}
+
+button {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
 
 
 
@@ -512,6 +522,17 @@ form {
 
     .multi4 {
         grid-area: multi4;
+    }
+
+    /* ---------------- CONTACTO ----------------------*/
+
+    .mainform {
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        width: 80%;
     }
 
 }
