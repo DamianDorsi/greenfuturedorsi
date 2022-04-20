@@ -5,6 +5,7 @@
 
 body {
     box-sizing: border-box;
+    background-image: linear-gradient(to right bottom, #91d87d, #81d36d, #70cf5c, #5dca4a, #47c537, #3cc42e, #2fc224, #1cc117, #20c318, #25c61a, #28c81b, #2ccb1c);
 }
 
 a {
@@ -47,67 +48,14 @@ nav div img {
 
 /* -------------- MAIN -----------------*/
 
-.divMain {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    gap: 0;
-    grid-template-areas: 
-                 "h2 h2"
-                 "img1 img2"
-                 "img3 img4";
+.divh2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.divMain h3 {
-    padding-top: 3px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.h2Main {
-    grid-area: h2;
-    font-size: 20px;
-    text-align: center;
-}
-
-.divImg1 {
-    grid-area: img1;
-}
-
-.divImg1 img {
-    width: 200px;
-    height: 200px;
-}
-
-.divImg2 {
-    grid-area: img2;
-}
-
-.divImg2 img {
-    width: 200px;
-    height: 200px;
-}
-
-.divImg3 {
-    grid-area: img3;
-    padding-top: 15px;
-}
-
-.divImg3 img {
-    width: 200px;
-    height: 200px;
-}
-
-.divImg4 {
-    grid-area: img4;
-    padding-top: 15px;
-}
-
-.divImg4 img {
-    width: 200px;
-    height: 200px;
+.mainImg {
+    width: 180px;
+    height: 180px;
 }
 
 /* ------------- FOOTER ------------------ */
@@ -385,47 +333,16 @@ button {
 
 
 @media (min-width: 768px) {
-    .divMain {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        justify-items: center;
-        align-items: center;
-        gap: 0;
-        grid-template-areas: 
-                     "h2 h2 h2"
-                     "img1 img2 img3"
-                     "img4 img4 img4";
-    }
-	
-    .h2Main {
-        grid-area: h2;
-        font-size: 20px;
-        text-align: center;
+
+    .neonline img {
+        width: 768px;
     }
 
-    .divImg1 {
-        grid-area: img1;
-    }
-
-    .divImg2 {
-        grid-area: img2;
-    }
-
-    .divImg3 {
-        grid-area: img3;
-    }
-
-    .divImg4 {
-        grid-area: img4;
-    }
-
-    .divImg4 img {
-        width: 450px;
-    }
-
-    nav div ul li {
-        font-size: 18px;
+    .divh2 {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 40px;
     }
 
     /*------- PRODUCTOS -------------*/
