@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#91d87d), color-stop(#81d36d), color-stop(#70cf5c), color-stop(#5dca4a), color-stop(#47c537), color-stop(#3cc42e), color-stop(#2fc224), color-stop(#1cc117), color-stop(#20c318), color-stop(#25c61a), color-stop(#28c81b), to(#2ccb1c));
+  background-image: linear-gradient(to right bottom, #91d87d, #81d36d, #70cf5c, #5dca4a, #47c537, #3cc42e, #2fc224, #1cc117, #20c318, #25c61a, #28c81b, #2ccb1c);
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h2, h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* -------- HEADER ----------- */
+.bg-dark {
+  background-color: black !important;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav div img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* ------------- BANNER ------------------ */
+.bannerImg img {
+  width: 100%;
+  height: 200px;
+}
+
+.neonline {
+  background-color: black;
+}
+
+.neonline img {
+  width: 425px;
+  height: 15px;
+  margin-top: -23px;
+}
+
+/* -------------- MAIN -----------------*/
+.navbar-toggler {
+  padding-top: 25px;
+}
+
+.divh2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.mainImg {
+  width: 100%;
+  height: 180px;
+}
+
+.divEffect {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.divEffect h3 {
+  font-size: 1.2rem;
+  padding-top: 15px;
+}
+
+/* ------------------- MULTIMEDIA -------------------*/
+.mainMultimedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 425px;
+}
+
+.mainMultimedia div img {
+  width: 425px;
+}
+
+/* -------------------------- NOSOTROS ----------------------*/
+.mainNosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  word-spacing: 5px;
+  line-height: 25px;
+  background-color: aqua;
+  padding-bottom: 25px;
+}
+
+.mainNosotros h2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.divEmpty {
+  height: 2px;
+  background-color: black;
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.sectionPersonas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+  gap: 30px;
+}
+
+.sectionPersonas div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sectionPersonas img {
+  width: 150px;
+}
+
+.pNosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 15px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.pNosotros h3 {
+  background-color: chartreuse;
+}
+
+.pNosotros p {
+  padding-top: 15px;
+}
+
+/* --------------------- CONTACTO -----------------*/
+form {
+  width: 100%;
+  margin-top: 30px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+  border: 2px solid green;
+}
+
+.form-group {
+  width: 70%;
+}
+
+.enviar {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  background: black;
+  border: 2px solid green;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.enviar:hover {
+  color: white;
+  background: green;
+}
+
+form h2, form label {
+  color: white;
+}
+
+form div {
+  padding-top: 15px;
+}
+
+button {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  /*---------- MAIN ----------------*/
+  .neonline img {
+    width: 768px;
+  }
+  .divh2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  /* ------------------- MULTIMEDIA ----------------*/
+  .mainMultimedia {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "multi1 multi2" "multi3 multi3" "multi4 multi4";
+  }
+  .mainMultimedia div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 200px;
+  }
+  .mainMultimedia div img {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .multi1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: multi1;
+  }
+  .multi2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: multi2;
+  }
+  .multi3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: multi3;
+  }
+  .multi4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: multi4;
+  }
+  /* ---------------- CONTACTO ----------------------*/
+  .mainform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  form {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .neonline img {
+    width: 1024px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .neonline img {
+    width: 1440px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
