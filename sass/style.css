@@ -77,6 +77,49 @@ nav div img {
   padding-top: 15px;
 }
 
+.sectionLinks h2 {
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  margin: 30px 0 30px 0;
+}
+
+.button-red {
+  background: red !important;
+}
+
+.button-yellow {
+  background: yellow !important;
+}
+
+.button-blue {
+  background: blue !important;
+}
+
+.divLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0 25px 0;
+}
+
+.divLinks i {
+  font-size: 4rem;
+}
+
+.divLinks p {
+  font-size: 1rem;
+  padding-top: 35px;
+}
+
 /* ------------------- MULTIMEDIA -------------------*/
 .mainMultimedia {
   display: -webkit-box;
@@ -193,7 +236,7 @@ form {
   width: 70%;
 }
 
-.enviar {
+.button, .button-red, .button-yellow, .button-blue {
   outline: none;
   height: 40px;
   text-align: center;
@@ -208,7 +251,7 @@ form {
   transition: all 0.25s ease;
 }
 
-.enviar:hover {
+.button:hover, .button-red:hover, .button-yellow:hover, .button-blue:hover {
   color: white;
   background: green;
 }
@@ -219,11 +262,6 @@ form h2, form label {
 
 form div {
   padding-top: 15px;
-}
-
-button {
-  margin-top: 15px;
-  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
