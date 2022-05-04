@@ -70,6 +70,15 @@ nav div img {
 .divEffect {
   margin-top: 20px;
   text-align: center;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.divEffect:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .divEffect h3 {
@@ -82,18 +91,6 @@ nav div img {
   text-align: center;
   font-size: 2rem;
   margin: 30px 0 30px 0;
-}
-
-.button-red {
-  background: red !important;
-}
-
-.button-yellow {
-  background: yellow !important;
-}
-
-.button-blue {
-  background: blue !important;
 }
 
 .divLinks {
@@ -120,6 +117,11 @@ nav div img {
   padding-top: 35px;
 }
 
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
 /* ------------------- MULTIMEDIA -------------------*/
 .mainMultimedia {
   display: -webkit-box;
@@ -134,6 +136,18 @@ nav div img {
 
 .mainMultimedia div img {
   width: 425px;
+}
+
+.mainMultimedia div {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.mainMultimedia div:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 /* -------------------------- NOSOTROS ----------------------*/
@@ -151,8 +165,9 @@ nav div img {
   text-align: center;
   word-spacing: 5px;
   line-height: 25px;
-  background-color: aqua;
+  background-color: black;
   padding-bottom: 25px;
+  color: white;
 }
 
 .mainNosotros h2 {
@@ -214,6 +229,10 @@ nav div img {
 }
 
 /* --------------------- CONTACTO -----------------*/
+.mainform {
+  margin-bottom: 30px;
+}
+
 form {
   width: 100%;
   margin-top: 30px;
@@ -236,7 +255,7 @@ form {
   width: 70%;
 }
 
-.button, .button-red, .button-yellow, .button-blue {
+.button {
   outline: none;
   height: 40px;
   text-align: center;
@@ -249,9 +268,10 @@ form {
   cursor: pointer;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
+  margin: 10px 0 10px 0;
 }
 
-.button:hover, .button-red:hover, .button-yellow:hover, .button-blue:hover {
+.button:hover {
   color: white;
   background: green;
 }
@@ -281,48 +301,27 @@ form div {
   }
   /* ------------------- MULTIMEDIA ----------------*/
   .mainMultimedia {
-    display: -ms-grid;
-    display: grid;
-    width: 100%;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "multi1 multi2" "multi3 multi3" "multi4 multi4";
-  }
-  .mainMultimedia div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
-    height: 200px;
+  }
+  .mainMultimedia div {
+    width: 70%;
+    height: auto;
+    margin: 15px 0 15px 0;
   }
   .mainMultimedia div img {
     width: 100%;
     height: 200px;
     margin: 0 auto;
-  }
-  .multi1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: multi1;
-  }
-  .multi2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: multi2;
-  }
-  .multi3 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: multi3;
-  }
-  .multi4 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: multi4;
   }
   /* ---------------- CONTACTO ----------------------*/
   .mainform {
@@ -341,6 +340,9 @@ form div {
 @media (min-width: 1024px) {
   .neonline img {
     width: 1024px;
+  }
+  .mainMultimedia div img {
+    height: 350px;
   }
 }
 
