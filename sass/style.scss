@@ -81,7 +81,7 @@
   }
   
   .divEffect {
-    margin-top: 20px;
+    margin-top: 20px 0 20px 0;
     text-align: center;
     transition: 1s ease;
 
@@ -121,7 +121,7 @@
     text-decoration: none;
     color: white;
   }
-  
+
   /* ------------------- MULTIMEDIA -------------------*/
   
   .mainMultimedia {
@@ -253,8 +253,6 @@
       padding-top: 15px;
     }
   }
-  
-  
   
   @media (min-width: 768px) {
     /*---------- MAIN ----------------*/
